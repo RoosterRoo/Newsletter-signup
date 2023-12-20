@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  box-sizing: content-box;
+}
+
+.signup-content {
+  margin: 0 1.25rem;
+}
+
+.option {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.options {
+  margin-bottom: 2em;
+}
+
+.option img {
+  margin-right: 1em;
+}
+
+.email-verify {
+  display: flex;
+  flex-direction: column;
+}
+
+.confirm {
+  display: none;
+}
+
+.active {
+  margin: 1em;
+  height: 100vh;
+}
+
+.email-verify input,
+.dismiss-btn {
+  margin: 1em 0;
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+.newsletter,
+.dismiss-btn {
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+}
+
+.dismiss-btn {
+  width: 100%;
+}
+
+.newsletter:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(249, 42, 84, 1) 0%,
+    hsl(4, 100%, 67%) 100%
+  );
+  box-shadow: 0 1em 1em -1em hsl(4, 100%, 67%);
+  cursor: pointer;
+}
+
+@media (min-width: 424px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(235, 18%, 26%);
+  }
+
+  .signup-img {
+    content: url("./assets/images/illustration-sign-up-desktop.svg");
+  }
+
+  .container {
+    display: flex;
+    transform: scale(0.6);
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1em;
+    padding: 1em;
+    justify-content: space-between;
+  }
+
+  .signup-img {
+    order: 1;
+  }
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
